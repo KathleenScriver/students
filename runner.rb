@@ -50,5 +50,5 @@ to_b = Cohort.new("To Be", to_be)
 
 new_frs = Cohort.new("New Friends", new_friends)
 
-cli = Cli.new(git_mon, to_be, new_friends)
+cli = Cli.new(git_mon, to_b, new_frs)
 cli.menu
