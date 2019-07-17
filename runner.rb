@@ -32,11 +32,14 @@ new_friends = [
 
 all_students = to_be + new_friends
 
-to_b = Cohort.new(to_be)
-to_b.pair_off
+# Comment out code below to get pairs for desired cohort
+
+# to_b = Cohort.new(to_be)
+# to_b.pair_off
 
 new_frs = Cohort.new(new_friends)
-new_frs.pair_off
+# new_frs.pair_off
+new_frs.pairs_of_three
 
-all = Cohort.new(all_students)
-all.pair_off
+# all = Cohort.new(all_students)
+# all.pair_off
