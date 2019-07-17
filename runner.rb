@@ -1,5 +1,16 @@
 require 'pry'
 require './cohort'
+require './cli'
+
+git_money = [
+  "Joe T",
+  "Joe R",
+  "David",
+  "Jesse",
+  "Tejas",
+  "Chris",
+  "Alex"
+]
 
 to_be = [
   "Ahmed",
@@ -33,15 +44,11 @@ new_friends = [
 all_students = to_be + new_friends
 
 # Comment in/out code below to get pairs for desired cohort
+git_mon = Cohort.new("Git Money", git_money)
 
-to_b = Cohort.new(to_be)
-# to_b.pair_off
-# to_b.pairs_of_three
+to_b = Cohort.new("To Be", to_be)
 
-new_frs = Cohort.new(new_friends)
-# new_frs.pair_off
-# new_frs.pairs_of_three
+new_frs = Cohort.new("New Friends", new_friends)
 
-all = Cohort.new(all_students)
-# all.pair_off
-# all.pairs_of_three
+cli = Cli.new(git_mon, to_be, new_friends)
+cli.menu
