@@ -9,6 +9,7 @@ class Cohort
   def pairs_of(size)
     groups = (students.length / size.to_f).ceil
     shuffled_students = students.shuffle
+    puts "\n**** Your Groups ****\n\n"
     until(shuffled_students.length == 0) do
       if(shuffled_students.length == (size + 1))
         puts "#{shuffled_students.join(' - ')}"
@@ -18,4 +19,5 @@ class Cohort
       puts "#{group.join(' - ')}"
     end
   end
+  puts "\n"
 end
