@@ -48,7 +48,7 @@ git_mon = Cohort.new("Git Money", git_money)
 
 to_b = Cohort.new("To Be", to_be)
 
-new_frs = Cohort.new("New Friends", eleven_xers)
+new_frs = Cohort.new("11xers", eleven_xers)
 
 cli = Cli.new(git_mon, to_b, new_frs)
 cli.menu
