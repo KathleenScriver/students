@@ -2,16 +2,6 @@ require 'pry'
 require './cohort'
 require './cli'
 
-git_money = [
-  "Joe T",
-  "Joe R",
-  "David",
-  "Jesse",
-  "Tejas",
-  "Chris",
-  "Alex"
-]
-
 to_be = [
   "Ahmed",
   "Angela",
@@ -35,7 +25,6 @@ eleven_xers = [
   "Jackson",
   "Jeremiah",
   "Luke",
-  "Matt",
   "Rob",
   "Taylor",
   "Tyler"
