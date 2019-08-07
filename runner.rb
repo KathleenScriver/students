@@ -44,11 +44,11 @@ eleven_xers = [
 all_students = to_be + eleven_xers
 
 # Comment in/out code below to get pairs for desired cohort
-git_mon = Cohort.new("Git Money", git_money)
+# git_mon = Cohort.new("Git Money", git_money)
 
 to_b = Cohort.new("To Be", to_be)
 
 new_frs = Cohort.new("11xers", eleven_xers)
 
-cli = Cli.new(git_mon, to_b, new_frs)
+cli = Cli.new(to_b, new_frs)
 cli.menu

@@ -1,5 +1,5 @@
 class Cli
-  def initialize(cohort_1, cohort_2, cohort_3 = [])
+  def initialize(cohort_1, cohort_2, cohort_3 = nil)
     @cohort_1 = cohort_1
     @cohort_2 = cohort_2
     @cohort_3 = cohort_3
@@ -7,10 +7,10 @@ class Cli
 
   def menu
     puts "Enter the menu number of the cohort(s) you want to include in the grouping.\n"
-    if @cohort_3.students.empty?
-      list_two_cohort_options
-    else
+    if @cohort_3
       list_three_cohort_options
+    else
+      list_two_cohort_options
     end
     cohort_choice = gets.chomp.to_i
     chosen_cohorts = cohort_map[cohort_choice]
