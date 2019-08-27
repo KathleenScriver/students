@@ -30,14 +30,37 @@ eleven_xers = [
   "Tyler"
 ]
 
-all_students = to_be + eleven_xers
+new_friends = [
+  "Aaron",
+  "Amanda",
+  "Andrew",
+  "Arina",
+  "Arlene",
+  "Cat",
+  "Chris",
+  "Colin",
+  "Damon",
+  "Danielle",
+  "Gage",
+  "Ben",
+  "Joe",
+  "Katie",
+  "Lizzy",
+  "Martin",
+  "Mohamad",
+  "Priscilla"
+]
+
+all_students = to_be + eleven_xers + new_friends
 
 # Comment in/out code below to get pairs for desired cohort
 # git_mon = Cohort.new("Git Money", git_money)
 
 to_b = Cohort.new("To Be", to_be)
 
-new_frs = Cohort.new("11xers", eleven_xers)
+eleven_xers = Cohort.new("11xers", eleven_xers)
 
-cli = Cli.new(to_b, new_frs)
+new_frs = Cohort.new("New Friends", new_friends)
+
+cli = Cli.new(to_b, eleven_xers, new_frs)
 cli.menu
