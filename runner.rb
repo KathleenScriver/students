@@ -2,65 +2,47 @@ require 'pry'
 require './cohort'
 require './cli'
 
-to_be = [
-  "Ahmed",
-  "Angela",
-  "Blake",
-  "Christy",
-  "Dave",
-  "Devin",
-  "Dustin",
-  "Fekade",
-  "Nelly",
-  "Patrick",
-  "Ricardo",
-  "Tri"
+hashketeers = [
+  "Amy",
+  "Samantha",
+  "Stacey",
+  "Mez",
+  "Tatiana",
+  "Adam",
+  "Seth",
+  "Tobie",
+  "Diana",
+  "Jess"
 ]
 
-eleven_xers = [
-  "Cat",
-  "Cody",
-  "Daniel",
-  "Ethan",
-  "Jackson",
-  "Jeremiah",
-  "Luke",
-  "Rob",
-  "Taylor",
-  "Tyler"
-]
-
-new_friends = [
-  "Aaron",
-  "Amanda",
-  "Andrew",
-  "Arina",
-  "Arlene",
-  "Cat",
-  "Chris",
-  "Colin",
-  "Damon",
-  "Danielle",
-  "Gage",
+bits_please = [
+  "Josh",
+  "Dani",
+  "Alexis",
+  "Rocky",
+  "Tissi",
   "Ben",
-  "Joe",
-  "Katie",
-  "Lizzy",
-  "Martin",
-  "Mohamad",
-  "Priscilla"
+  "Parker",
+  "Karl",
+  "Chuck",
+  "Sam",
+  "Kelly",
+  "Finn",
+  "Patrick",
+  "Miriam",
+  "John"
 ]
 
-all_students = to_be + eleven_xers + new_friends
+all_students = hashketeers + bits_please
 
 # Comment in/out code below to get pairs for desired cohort
 # git_mon = Cohort.new("Git Money", git_money)
 
-to_b = Cohort.new("To Be", to_be)
 
-eleven_xers = Cohort.new("11xers", eleven_xers)
 
-new_frs = Cohort.new("New Friends", new_friends)
+c2 = Cohort.new("Hashketeers", hashketeers)
 
-cli = Cli.new(to_b, eleven_xers, new_frs)
+c3 = Cohort.new("Bits, Please", bits_please)
+
+cli = Cli.new(c2, c3)
 cli.menu
